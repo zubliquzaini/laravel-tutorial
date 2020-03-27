@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Service;
 use Illuminate\Http\Request;
 
 class HelloController extends Controller
@@ -10,6 +11,10 @@ class HelloController extends Controller
 
         $services = [
         ];
+
+        $services = Service::all();
+
+        // dd($services);
 
         return view('about', compact('services'));
     }
