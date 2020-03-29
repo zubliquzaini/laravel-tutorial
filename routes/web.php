@@ -18,4 +18,6 @@ Route::get('/', function () {
 });
 
 Route::get('/hello', 'HelloController@index');
-Route::get('/about', 'HelloController@about');
+Route::get('/about', 'ServiceController@index');
+Route::get('/service', 'ServiceController@index');
+Route::post('/service', 'ServiceController@store');

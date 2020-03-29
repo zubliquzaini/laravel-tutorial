@@ -10,18 +10,6 @@ class HelloController extends Controller
     public function index() {
 
         $services = [
-        ];
-
-        $services = Service::all();
-
-        // dd($services);
-
-        return view('about', compact('services'));
-    }
-
-    public function about() {
-
-        $services = [
             'Service 1',
             'Service 2',
             'Service 3',
@@ -29,5 +17,7 @@ class HelloController extends Controller
         ];
 
         return view('about', compact('services'));
+
     }
+
 }
