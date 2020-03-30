@@ -28,6 +28,20 @@ class CustomerController extends Controller
 
         Customer::create($data);
 
-        return redirect('/customer');
+        return redirect('/customers');
     }
+
+    // Option 2
+    public function show(Customer $customer) {
+
+        return view('customer.show', compact('customer'));
+    }
+
+    // Option 1
+    // public function show($customerId) {
+
+    //     $customer = Customer::findOrFail($customerId);
+
+    //     return view('customer.show', compact('customer'));
+    // }
 }

@@ -1,6 +1,6 @@
 <h1>Add New Customer</h1>
 
-<form action="/customer" method="post">
+<form action="/customers" method="post">
     <div>
         <label for="name">Name</label>
         <input type="text" name="name" autocomplete="off" value="{{ old('name') }}">
