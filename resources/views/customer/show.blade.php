@@ -9,5 +9,6 @@
 <p>{{ $customer->email }}</p>
 
 <a href="/customers">Return</a>
+<a href="/customers/{{ $customer->id }}/edit">Edit</a>
 
 
