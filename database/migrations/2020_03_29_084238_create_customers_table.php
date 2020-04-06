@@ -17,10 +17,10 @@ class CreateCustomersTable extends Migration
             $table->id();
             $table->string('name');
             $table->string('email');
-
+            $table->unsignedInteger('active')->default(1);
             // For non-required
             // $table->string('notes')->nullable();
-            
+
             $table->timestamps();
         });
     }
